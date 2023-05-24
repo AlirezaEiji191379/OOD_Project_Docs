@@ -1,0 +1,46 @@
+\documentclass[oneside,a4paper,12pt]{book}
+\input{styles/common.tex}
+\input{styles/custom.tex}
+\usepackage{placeins}
+\usepackage{longtable}
+\usepackage{xcolor}
+\usepackage{float}
+\definecolor{myyellow}{RGB}{232, 160, 35}
+\definecolor{green}{RGB}{6, 148, 49}
+\begin{document}
+
+% -------------------- Front Pages --------------------
+
+\include{front/info}
+\pagestyle{empty}
+\include{front/template/title}
+\pagestyle{plain}
+\pagenumbering{tartibi}
+\include{chapters/versions}
+% -------------------- Table of Contents --------------------
+
+\tableofcontents \newpage
+\listoftables \newpage
+\listoffigures \newpage
+
+
+% -------------------- Chapters --------------------
+
+\pagenumbering{arabic}
+
+\include{chapters/introduction}
+\include{chapters/product_review}
+\include{chapters/business_case}
+\include{chapters/feasibility}
+\include{chapters/requirements}
+\include{chapters/prioritize_requirements}
+\include{chapters/risks}
+\include{chapters/prioritize_risks}
+\include{chapters/usecases}
+\include{chapters/ui_prototype}
+\include{chapters/architecture_prototye}
+\include{chapters/schedule}
+\include{chapters/glossary}
+% -------------------- The End! --------------------
+
+\end{document}
